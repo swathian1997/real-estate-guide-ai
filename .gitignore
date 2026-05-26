@@ -2,3 +2,7 @@ node_modules
 .angular
 node_modules
 dist
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
