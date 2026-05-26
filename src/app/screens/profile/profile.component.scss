@@ -1,0 +1,252 @@
+.profile-screen {
+  background: var(--dark-bg);
+  min-height: 100vh;
+}
+
+.profile-content {
+  padding: 0 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.user-card {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--dark-card), var(--dark-surface));
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-lg);
+  margin-top: 8px;
+
+  .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+
+    mat-icon {
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+      color: var(--dark-bg);
+    }
+  }
+
+  .user-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+  }
+
+  .user-role {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .user-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      min-width: 70px;
+
+      .stat-value {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--gold);
+      }
+
+      .stat-label {
+        font-size: 12px;
+        color: var(--text-muted);
+      }
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 32px;
+      background: var(--dark-border);
+    }
+  }
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.stats-section {
+  .stats-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .stat-row {
+      .stat-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .stat-name {
+          font-size: 14px;
+          color: var(--text-secondary);
+        }
+
+        .stat-percent {
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--gold);
+        }
+      }
+    }
+  }
+}
+
+.saved-section {
+  .saved-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .saved-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--dark-card);
+    border: 1px solid var(--dark-border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    .saved-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(201, 168, 76, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      mat-icon {
+        color: var(--gold);
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .saved-info {
+      flex: 1;
+      min-width: 0;
+
+      h4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 2px;
+        color: var(--text-primary);
+      }
+
+      p {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin: 0;
+      }
+    }
+
+    .saved-arrow {
+      color: var(--text-muted);
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.settings-section {
+  .settings-card {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+
+    .setting-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--dark-border);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .setting-info {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        mat-icon {
+          color: var(--gold);
+          font-size: 22px;
+          width: 22px;
+          height: 22px;
+        }
+
+        span {
+          font-size: 14px;
+          color: var(--text-primary);
+        }
+      }
+
+      .setting-value {
+        font-size: 14px;
+        color: var(--text-secondary);
+      }
+
+      .setting-arrow {
+        color: var(--text-muted);
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.logout-section {
+  .logout-btn {
+    height: 48px;
+    border-color: rgba(239, 68, 68, 0.3) !important;
+    color: #ef4444 !important;
+    gap: 8px;
+
+    mat-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

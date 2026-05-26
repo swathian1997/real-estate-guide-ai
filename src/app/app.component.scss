@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.mobile-container {
+  min-height: 100vh;
+  background: var(--dark-bg);
+}
